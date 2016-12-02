@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+/* line 15, main.scss */
+p { font-family: 'Lora', serif; font-size: 16px; padding: 0; margin: 0; }
+
+/* line 27, main.scss */
+header { background: #6fcafa; border-bottom: 7px solid #d3d9de; }
+
+/* line 34, main.scss */
+footer { background: #6fcafa; }

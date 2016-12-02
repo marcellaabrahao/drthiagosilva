@@ -1,0 +1,36 @@
+// ==========================================================================
+// Dr. Thiago Silva | Folha de estilo Sass
+// ==========================================================================
+
+// Cores
+$azulescuro: #1c2469;
+$azulclaro: #6fcafa;
+$cinza: #d3d9de;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+
+
+// GERAL
+p {
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	padding: 0;
+	margin:0;
+}
+
+
+
+
+
+// HEADER
+header {
+	background: $azulclaro;
+	border-bottom: 7px solid $cinza;
+}
+
+section {}
+
+footer {
+	background: $azulclaro;
+}
