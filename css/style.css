@@ -1,0 +1,281 @@
+/*------------------------------
+  Font: Avenir 65
+------------------------------*/
+@font-face {
+    font-family: 'avenir_65medium';
+    src: url('../fonts/avenir-medium-webfont.eot');
+    src: url('../fonts/avenir-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir-medium-webfont.woff2') format('woff2'),
+         url('../fonts/avenir-medium-webfont.woff') format('woff'),
+         url('../fonts/avenir-medium-webfont.ttf') format('truetype'),
+         url('../fonts/avenir-medium-webfont.svg#avenir_65medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*------------------------------
+  [] body / html
+------------------------------*/
+body {
+    background: #e4e4e4;
+    overflow-x: hidden;
+}
+hr{
+    background: #bac5ce;
+    height: 5px;
+    width: 150px;
+    float: left;
+    margin: 5px 0;
+}
+
+/*  .links
+ ------------------------------*/
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #1f1f1f;
+}
+
+/*  .titles and texts
+ ------------------------------*/
+p { 
+    font-size: 1em;
+    font-family: 'avenir_65medium';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'avenir_65medium';
+    color: #82b5d2;
+}
+h2{
+    vertical-align: middle;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+h3{ 
+    font-size: 1em;
+    line-height: 1em;
+}
+
+
+/*------------------------------
+  [] header
+------------------------------*/
+header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+}
+
+
+/*------------------------------
+  [] navigation
+------------------------------*/
+.navbar-brand{ height: auto;}
+.navbar {
+    text-transform: uppercase;
+    font-family: 'avenir_65medium';
+    background: #82b5d2;
+}
+
+.navbar a:focus { outline: 0;}
+.navbar .navbar-nav { letter-spacing: 1px;}
+.navbar .navbar-nav li a:focus { outline: 0;}
+.navbar-default,
+.navbar-inverse { border: 0;}
+.navbar-default{ border-bottom: 5px solid #bac5ce;}
+.navbar-default .navbar-nav > li > a:hover{ color: #1f1f1f;}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{ color: #5e739a;}
+.navbar-collapse{ margin: 20px 0;}
+
+@media(max-width:767px) {
+    .navbar-collapse{ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;}
+    .navbar-nav { background: rgba(255, 255, 255, 0.1);}
+}
+
+.navbar-toggle{ background: #1a242f;}
+
+
+/*------------------------------
+  [] content
+------------------------------*/
+section{ margin: 100px 0;}
+@media(max-width:767px) {
+    section { padding: 75px 0;}
+}
+.imgTit{ margin: 40px 0 20px 0;}
+
+/* home > .banner
+ ------------------------------*/
+
+/* home > #preview1
+ ------------------------------*/
+
+/* home > #preview2
+ ------------------------------*/
+
+
+
+
+
+
+
+
+
+/*  .maps
+ ------------------------------*/
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-left: 50px solid #5e739a;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/*  .contato
+ ------------------------------*/
+#form{ 
+    background: #5e739a;
+    border-radius: 20px;
+    padding: 30px;
+}
+textarea.form-control{ height: 100px;}
+.form-control{ border: none;}
+.form-control:focus{ border: none; }
+.select{
+    background: #7da9cd;
+    color: #fff;
+}
+
+/*------------------------------
+  [] footer
+------------------------------*/
+footer { color: #2c3e50;}
+footer .footer-above {
+    background: url(../img/bgfooter.jpg) no-repeat center bottom;
+    padding: 50px 0;
+}
+.footer-above>div>div>div>address{ color: #2c3e50;}
+.footer-above>div>div>div>address>a{ color: #2c3e50;}
+footer .footer-below {
+    padding: 20px 0 15px 0;
+    background-color: #82b5d2;
+    color: #fff;
+}
+.btn-outline {
+    border: none;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: none;
+    color: #7da9cd;
+    background: none;
+}
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 0px;
+    border: none;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+
+/*------------------------------
+  [] social
+------------------------------*/
+ .list-inline{ text-align: right;}
+ .list-inline > li { 
+    padding-left: 0; 
+    padding-right: 0;
+}
+.fa{
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    width: 30px;
+}
+.fa-facebook{ 
+    color: #82b5d2;
+    font-size: .8em;
+}
+.fa-twitter{ 
+    color: #82b5d2;
+    font-size: .8em;
+}
+.fa-instagram{ 
+    color: #82b5d2;
+    font-size: .8em;
+}
+
+/*------------------------------
+  [] address
+------------------------------*/
+address{ 
+    color: #fff;
+    text-transform: none;
+    padding: 20px 15px 0 15px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+address>a{ color: #fff;}
+
+/*------------------------------
+  [] button
+------------------------------*/
+.btn{ padding: 8px 10px;}
+.btn-primary{
+    background: #82b5d2;
+    border-radius: 20px;
+    border-color: #82b5d2;
+}
+.btn-primary:focus,
+.btn-primary:hover{ 
+    background: #75a9c6;
+    border-color: #75a9c6;
+}
+.btn-primary>a{ color: #fff;}
