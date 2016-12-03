@@ -1,36 +1,79 @@
-// ==========================================================================
-// Dr. Thiago Silva | Folha de estilo Sass
-// ==========================================================================
+// CORES
+$ts-azulescuro: #1c2469;
+$ts-azulclaro: #62c2f3;
+$ts-cinza: #d3d9de;
+$ts-branco: #fff;
+$ts-branco10: rgba( 255, 255, 255, .1);
 
-// Cores
-$azulescuro: #1c2469;
-$azulclaro: #6fcafa;
-$cinza: #d3d9de;
-
-// Fonts
+// FONTES
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+
+@font-face {
+    font-family: 'drthiagosilva';
+    src: url('../fonts/drthiagosilva.eot');
+    src: url('../fonts/drthiagosilva.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/drthiagosilva.woff') format('woff'),
+         url('../fonts/drthiagosilva.ttf') format('truetype'),
+         url('../fonts/drthiagosilva.svg#drthiagosilva') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'drthiagosilva';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.icon-instagram-logotype-button:before{content:'\0041';}
+.icon-facebook-logotype-button:before{content:'\0042';}
+.icon-chevron-arrow-down:before{content:'\0043';}
+.icon-cerebro:before{content:'\0044';}
+
+
+// TRANSITION
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-moz-transition:    $transition;
+	-ms-transition:     $transition;
+	-o-transition:      $transition;
+	transition:         $transition;
+}
+
+// BORDAS ARREDONDADAS
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	-ms-border-radius:     $radius;
+	border-radius:         $radius;
+	}
+
 
 
 // GERAL
-p {
+body {
+	text-rendering: optimizeLegibility;
+	font-weight: normal;
 	font-family: 'Lora', serif;
-	font-size: 16px;
-	padding: 0;
-	margin:0;
 }
 
+a:focus {
+	outline: none !important;
+}
 
 
 
 
 // HEADER
 header {
-	background: $azulclaro;
-	border-bottom: 7px solid $cinza;
+	background: ts-azulclaro;
+	border-bottom: 7px solid $ts-cinza;
 }
 
 section {}
 
 footer {
-	background: $azulclaro;
+	background: ts-azulclaro;
 }
