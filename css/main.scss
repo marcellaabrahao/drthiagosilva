@@ -2,8 +2,10 @@
 $ts-azulescuro: #1c2469;
 $ts-azulclaro: #62c2f3;
 $ts-cinza: #d3d9de;
+$ts-cinzaclaro: #f5f5f5;
 $ts-branco: #fff;
-$ts-branco10: rgba( 255, 255, 255, .1);
+$ts-branco10: rgba( 255, 255, 255, .15);
+$ts-chumbo: #232327;
 
 // FONTES
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
@@ -27,9 +29,9 @@ $ts-branco10: rgba( 255, 255, 255, .1);
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
-.icon-instagram-logotype-button:before{content:'\0041';}
-.icon-facebook-logotype-button:before{content:'\0042';}
-.icon-chevron-arrow-down:before{content:'\0043';}
+.icon-instagram:before{content:'\0041';}
+.icon-facebook:before{content:'\0042';}
+.icon-arrow-down:before{content:'\0043';}
 .icon-cerebro:before{content:'\0044';}
 
 
@@ -57,23 +59,82 @@ body {
 	text-rendering: optimizeLegibility;
 	font-weight: normal;
 	font-family: 'Lora', serif;
+	margin: 0; padding: 0;
 }
 
 a:focus {
 	outline: none !important;
 }
 
-
-
+p {
+	margin: 0; padding: 0;
+}
 
 // HEADER
 header {
-	background: ts-azulclaro;
+	background: $ts-azulclaro;
 	border-bottom: 7px solid $ts-cinza;
+
+	section{
+		&.hd-topo {
+			background: $ts-branco10;
+			p {
+				text-align: right;
+				font-size: 13px;
+				color: $ts-branco;
+				line-height: 29px;
+				display: inline-block;
+				float: right;
+				padding-right: 5px;
+
+				a {
+					color: $ts-branco;
+				}
+
+				
+			}
+			ul {
+				&.redessociais {
+					float: right;
+					margin:5px 0 0 0;
+    				padding: 0;
+					li {
+						display: inline-block;
+						list-style-type: none;
+
+						a {
+							color: $ts-branco;
+							font-size: 18px;
+							&:hover {
+								color: $ts-azulescuro;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	h1 {
+		margin-bottom: 15px;
+	}
 }
 
-section {}
+section {
+	&.destaque {
+		margin: 1px 0;
+	}
+
+	&.especialidades-home {
+		background: $ts-cinzaclaro;
+
+		.box-especialidade{
+			border-top: 5px solid $ts-azulclaro;
+			background: $ts-branco;
+		}
+	}
+}
 
 footer {
-	background: ts-azulclaro;
+	background: $ts-azulclaro;
 }
