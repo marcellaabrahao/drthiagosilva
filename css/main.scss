@@ -62,6 +62,11 @@ body {
 	margin: 0; padding: 0;
 }
 
+h1, h2, h3, h4, h5 , p {
+	font-family: 'Lora', serif;
+	margin: 0; padding: 0;
+}
+
 a:focus {
 	outline: none !important;
 }
@@ -117,12 +122,30 @@ header {
 
 	h1 {
 		margin-bottom: 15px;
+		
+		a {
+			img {
+				max-width: 375px !important;
+			}
+		}
 	}
 }
 
 section {
 	&.destaque {
-		margin: 1px 0;
+		/*margin: 1px 0;*/
+
+		background-image: url("../img/banner/banner-thiago-silva-01.jpg");
+		height: 520px;
+		background-size: cover;
+		margin-bottom: 1px;
+		margin-top: 1px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
 	}
 
 	&.especialidades-home {
@@ -133,8 +156,48 @@ section {
 			background: $ts-branco;
 		}
 	}
+	&.consulta-faq {
+		background: $ts-azulescuro;
+		h2 {
+			font-size: 24px;
+			color:$ts-branco;
+			font-weight: 700i;
+			font-style: italic;
+		}
+	}
 }
 
 footer {
 	background: $ts-azulclaro;
 }
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+	section {
+		&.destaque {
+			height: 420px;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	section {
+		&.destaque {
+			height: 340px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	section {
+		&.destaque {
+			height: 300px;
+		}
+	}
+}
+@media (max-width: 480px) {	
+	section {
+		&.destaque {
+			height: 220px;
+		}
+	}
+ }
+
