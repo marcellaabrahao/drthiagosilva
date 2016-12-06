@@ -72,15 +72,13 @@ body {
 h1, h2, h3, h4, h5 , p {
 	font-family: 'Lora', serif;
 	margin: 0; padding: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
 a:focus {
 	outline: none !important;
 }
 
-p {
-	margin: 0; padding: 0;
-}
 
 // HEADER
 header {
@@ -163,10 +161,10 @@ section {
 
 		.box-especialidade{
 			border-top: 5px solid $ts-azulclaro;
-			background: $ts-branco;
+			background: $ts-branco url(../img/meio-cerebro.png)no-repeat top left;
 			min-height: 260px;
 			height: auto !important;
-			padding: 15px;
+			padding: 35px 15px 60px;
 			margin-bottom: 20px;
 			@include box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.1));
 			@include transition(border-top 1s);
@@ -174,7 +172,9 @@ section {
 			h2 {
 				font-weight: 700i;
 				font-style: italic;
-				min-height: 80px;
+				min-height: 70px;
+				font-size: 24px;
+				max-width: 173px;
 				a {
 					color: $ts-azulclaro;
 					text-decoration: none;
@@ -222,19 +222,55 @@ section {
 
 		}
 	}
-	&.consulta-faq {
-		background: $ts-azulescuro;
+
+	&.consulta-faq {		
+		background-image: url(../img/bg-faq.png);
+		background-color: $ts-azulescuro;
+		background-blend-mode: multiply;
+		background-position: center center;
+		background-repeat: no-repeat;
+		padding: 35px 0;
 		h2 {
 			font-size: 24px;
 			color:$ts-branco;
 			font-weight: 700i;
 			font-style: italic;
+			a {
+				text-decoration: none;
+				color: $ts-branco;
+			}
 		}
+		p {
+			color: $ts-branco;
+			font-weight: 400;
+			a {
+				text-decoration: none;
+				color: $ts-branco;
+			}
+
+		}
+	}
+
+	&.contato-navegacao {
+		padding: 60px 0;
+		background-image: url(../img/bg-contato.png);
+		background-color: $ts-cinzaclaro;
+		background-blend-mode: multiply;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+
 	}
 }
 
 footer {
 	background: $ts-azulclaro;
+	p {
+		color: $ts-branco;
+		font-size: 14px;
+		text-align: center;
+		padding: 15px 0;
+		text-rendering: optimizeLegibility;
+	}
 }
 
 

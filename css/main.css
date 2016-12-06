@@ -19,43 +19,40 @@
 body { text-rendering: optimizeLegibility; font-weight: normal; font-family: 'Lora', serif; margin: 0; padding: 0; }
 
 /* line 72, main.scss */
-h1, h2, h3, h4, h5, p { font-family: 'Lora', serif; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, p { font-family: 'Lora', serif; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
 
-/* line 77, main.scss */
+/* line 78, main.scss */
 a:focus { outline: none !important; }
 
-/* line 81, main.scss */
-p { margin: 0; padding: 0; }
-
-/* line 86, main.scss */
+/* line 84, main.scss */
 header { background: #62c2f3; border-bottom: 7px solid #d3d9de; }
-/* line 91, main.scss */
+/* line 89, main.scss */
 header section.hd-topo { background: rgba(255, 255, 255, 0.15); }
-/* line 93, main.scss */
+/* line 91, main.scss */
 header section.hd-topo p { text-align: right; font-size: 13px; color: #fff; line-height: 29px; display: inline-block; float: right; padding-right: 5px; }
-/* line 102, main.scss */
+/* line 100, main.scss */
 header section.hd-topo p a { color: #fff; }
-/* line 109, main.scss */
+/* line 107, main.scss */
 header section.hd-topo ul.redessociais { float: right; margin: 5px 0 0 0; padding: 0; }
-/* line 113, main.scss */
+/* line 111, main.scss */
 header section.hd-topo ul.redessociais li { display: inline-block; list-style-type: none; }
-/* line 117, main.scss */
+/* line 115, main.scss */
 header section.hd-topo ul.redessociais li a { color: #fff; font-size: 18px; -webkit-transition: color 1s; -moz-transition: color 1s; -ms-transition: color 1s; -o-transition: color 1s; transition: color 1s; }
-/* line 121, main.scss */
+/* line 119, main.scss */
 header section.hd-topo ul.redessociais li a:hover { color: #1c2469; }
-/* line 131, main.scss */
+/* line 129, main.scss */
 header h1 { margin-bottom: 15px; }
-/* line 135, main.scss */
+/* line 133, main.scss */
 header h1 a img { max-width: 375px !important; }
 
-/* line 143, main.scss */
+/* line 141, main.scss */
 section.destaque { /*margin: 1px 0;*/ background-image: url("../img/banner/banner-thiago-silva-01.jpg"); height: 520px; background-size: cover; /*margin-bottom: 1px;*/ margin-top: 1px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-/* line 159, main.scss */
+/* line 157, main.scss */
 section.especialidades-home { background: #f5f5f5; padding-bottom: 50px; position: relative; }
-/* line 164, main.scss */
-section.especialidades-home .box-especialidade { border-top: 5px solid #62c2f3; background: #fff; min-height: 260px; height: auto !important; padding: 15px; margin-bottom: 20px; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; -webkit-transition: border-top 1s; -moz-transition: border-top 1s; -ms-transition: border-top 1s; -o-transition: border-top 1s; transition: border-top 1s; }
-/* line 174, main.scss */
-section.especialidades-home .box-especialidade h2 { font-weight: 700i; font-style: italic; min-height: 80px; }
+/* line 162, main.scss */
+section.especialidades-home .box-especialidade { border-top: 5px solid #62c2f3; background: #fff url(../img/meio-cerebro.png) no-repeat top left; min-height: 260px; height: auto !important; padding: 35px 15px 60px; margin-bottom: 20px; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; -webkit-transition: border-top 1s; -moz-transition: border-top 1s; -ms-transition: border-top 1s; -o-transition: border-top 1s; transition: border-top 1s; }
+/* line 172, main.scss */
+section.especialidades-home .box-especialidade h2 { font-weight: 700i; font-style: italic; min-height: 70px; font-size: 24px; max-width: 173px; }
 /* line 178, main.scss */
 section.especialidades-home .box-especialidade h2 a { color: #62c2f3; text-decoration: none; -webkit-transition: color 1s; -moz-transition: color 1s; -ms-transition: color 1s; -o-transition: color 1s; transition: color 1s; }
 /* line 185, main.scss */
@@ -70,19 +67,29 @@ section.especialidades-home .box-especialidade a.btn-saiba-mais:hover { backgrou
 section.especialidades-home .box-especialidade:hover { border-top: 5px solid #1c2469; }
 /* line 217, main.scss */
 section.especialidades-home .box-especialidade:hover h2 a { color: #1c2469; }
-/* line 225, main.scss */
-section.consulta-faq { background: #1c2469; }
-/* line 227, main.scss */
+/* line 226, main.scss */
+section.consulta-faq { background-image: url(../img/bg-faq.png); background-color: #1c2469; background-blend-mode: multiply; background-position: center center; background-repeat: no-repeat; padding: 35px 0; }
+/* line 233, main.scss */
 section.consulta-faq h2 { font-size: 24px; color: #fff; font-weight: 700i; font-style: italic; }
+/* line 238, main.scss */
+section.consulta-faq h2 a { text-decoration: none; color: #fff; }
+/* line 243, main.scss */
+section.consulta-faq p { color: #fff; font-weight: 400; }
+/* line 246, main.scss */
+section.consulta-faq p a { text-decoration: none; color: #fff; }
+/* line 254, main.scss */
+section.contato-navegacao { padding: 60px 0; background-image: url(../img/bg-contato.png); background-color: #f5f5f5; background-blend-mode: multiply; background-position: center bottom; background-repeat: no-repeat; }
 
-/* line 236, main.scss */
+/* line 265, main.scss */
 footer { background: #62c2f3; }
+/* line 267, main.scss */
+footer p { color: #fff; font-size: 14px; text-align: center; padding: 15px 0; text-rendering: optimizeLegibility; }
 
-@media (min-width: 992px) and (max-width: 1024px) { /* line 243, main.scss */
+@media (min-width: 992px) and (max-width: 1024px) { /* line 279, main.scss */
   section.destaque { height: 420px; } }
-@media (min-width: 768px) and (max-width: 991px) { /* line 250, main.scss */
+@media (min-width: 768px) and (max-width: 991px) { /* line 286, main.scss */
   section.destaque { height: 340px; } }
-@media (max-width: 767px) { /* line 257, main.scss */
+@media (max-width: 767px) { /* line 293, main.scss */
   section.destaque { height: 300px; } }
-@media (max-width: 480px) { /* line 264, main.scss */
+@media (max-width: 480px) { /* line 300, main.scss */
   section.destaque { height: 220px; } }
