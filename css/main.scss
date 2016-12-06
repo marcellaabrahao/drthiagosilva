@@ -52,6 +52,13 @@ $ts-chumbo: #232327;
 	border-radius:         $radius;
 	}
 
+// BOX SHADOW
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+    }
 
 
 // GERAL
@@ -110,6 +117,7 @@ header {
 						a {
 							color: $ts-branco;
 							font-size: 18px;
+							@include transition(color 1s);
 							&:hover {
 								color: $ts-azulescuro;
 							}
@@ -138,7 +146,7 @@ section {
 		background-image: url("../img/banner/banner-thiago-silva-01.jpg");
 		height: 520px;
 		background-size: cover;
-		margin-bottom: 1px;
+		/*margin-bottom: 1px;*/
 		margin-top: 1px;
 
 		display: flex;
@@ -150,10 +158,68 @@ section {
 
 	&.especialidades-home {
 		background: $ts-cinzaclaro;
+		padding-bottom: 50px;
+		position: relative;
 
 		.box-especialidade{
 			border-top: 5px solid $ts-azulclaro;
 			background: $ts-branco;
+			min-height: 260px;
+			height: auto !important;
+			padding: 15px;
+			margin-bottom: 20px;
+			@include box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.1));
+			@include transition(border-top 1s);
+
+			h2 {
+				font-weight: 700i;
+				font-style: italic;
+				min-height: 80px;
+				a {
+					color: $ts-azulclaro;
+					text-decoration: none;
+					@include transition(color 1s);
+				}
+			}
+
+			p {
+				font-weight: 400;
+				line-height: 18px;
+				a {
+					color: $ts-chumbo;
+					text-decoration: none;
+				}
+			}
+
+			a {
+				&.btn-saiba-mais {
+					position: absolute;
+					bottom: 40px;
+
+					@include border-radius(20px);
+					background: $ts-azulclaro;
+					padding: 5px 10px;
+					color: $ts-branco;
+					text-decoration: none;
+					font-weight: 400;
+					@include transition(background 1s);
+
+					&:hover {
+						background: $ts-azulescuro;
+					}
+				}
+			}
+
+			&:hover{
+				border-top: 5px solid $ts-azulescuro;
+
+				h2 {
+					a {
+						color: $ts-azulescuro;
+					}
+				}
+			}
+
 		}
 	}
 	&.consulta-faq {
