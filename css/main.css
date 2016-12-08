@@ -77,92 +77,102 @@ header .navbar-default .navbar-toggle.collapsed { background-color: #62c2f3; }
 header .navbar-default .navbar-toggle:hover { background-color: #1c2469; }
 
 /* line 216, main.scss */
-section.destaque { /*margin: 1px 0;*/ background-image: url("../img/banner/banner-thiago-silva-01.jpg"); height: 520px; background-size: cover; /*margin-bottom: 1px;*/ margin-top: 1px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-/* line 231, main.scss */
+section.destaque { /*margin: 1px 0;*/ background-image: url("../img/banner/banner-thiago-silva-01.jpg"); height: 500px; background-size: cover; /*margin-bottom: 1px;*/ margin-top: 1px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+/* line 230, main.scss */
 section.especialidades-home { background: #f5f5f5; padding-bottom: 50px; position: relative; }
-/* line 236, main.scss */
+/* line 235, main.scss */
 section.especialidades-home .box-especialidade { border-top: 5px solid #62c2f3; background: #fff url(../img/meio-cerebro.png) no-repeat top left; min-height: 260px; height: auto !important; padding: 35px 15px 60px; margin-bottom: 20px; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ; -webkit-transition: border-top 1s; -moz-transition: border-top 1s; -ms-transition: border-top 1s; -o-transition: border-top 1s; transition: border-top 1s; }
-/* line 246, main.scss */
+/* line 245, main.scss */
 section.especialidades-home .box-especialidade h2 { font-weight: 700i; font-style: italic; min-height: 70px; font-size: 24px; max-width: 173px; }
-/* line 252, main.scss */
+/* line 251, main.scss */
 section.especialidades-home .box-especialidade h2 a { color: #62c2f3; text-decoration: none; -webkit-transition: color 1s; -moz-transition: color 1s; -ms-transition: color 1s; -o-transition: color 1s; transition: color 1s; }
-/* line 259, main.scss */
+/* line 258, main.scss */
 section.especialidades-home .box-especialidade p { font-weight: 400; line-height: 18px; }
-/* line 262, main.scss */
+/* line 261, main.scss */
 section.especialidades-home .box-especialidade p a { color: #232327; text-decoration: none; }
-/* line 269, main.scss */
+/* line 268, main.scss */
 section.especialidades-home .box-especialidade a.btn-saiba-mais { position: absolute; bottom: 40px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; border-radius: 20px; background: #62c2f3; padding: 5px 10px; color: #fff; text-decoration: none; font-weight: 400; -webkit-transition: background 1s; -moz-transition: background 1s; -ms-transition: background 1s; -o-transition: background 1s; transition: background 1s; }
-/* line 281, main.scss */
+/* line 280, main.scss */
 section.especialidades-home .box-especialidade a.btn-saiba-mais:hover { background: #1c2469; }
-/* line 287, main.scss */
+/* line 286, main.scss */
 section.especialidades-home .box-especialidade:hover { border-top: 5px solid #1c2469; }
-/* line 291, main.scss */
+/* line 290, main.scss */
 section.especialidades-home .box-especialidade:hover h2 a { color: #1c2469; }
-/* line 300, main.scss */
+/* line 299, main.scss */
 section.consulta-faq { background-image: url(../img/bg-faq.png); background-color: #1c2469; background-blend-mode: multiply; background-position: center center; background-repeat: no-repeat; padding: 35px 0; }
-/* line 307, main.scss */
+/* line 306, main.scss */
 section.consulta-faq h2 { font-size: 24px; color: #fff; font-weight: 700i; font-style: italic; }
-/* line 312, main.scss */
+/* line 311, main.scss */
 section.consulta-faq h2 a { text-decoration: none; color: #fff; }
-/* line 318, main.scss */
+/* line 317, main.scss */
 section.consulta-faq p { color: #fff; font-weight: 400; display: table; padding-bottom: 20px; }
-/* line 323, main.scss */
+/* line 322, main.scss */
 section.consulta-faq p a { text-decoration: none; color: #fff; }
-/* line 330, main.scss */
+/* line 329, main.scss */
 section.consulta-faq span.icon-home { width: 70px; height: 70px; float: left; margin-right: 10px; }
-/* line 336, main.scss */
+/* line 335, main.scss */
 section.consulta-faq span.icon-home.icon-faq { background: url(../img/faq-icon.png) no-repeat top left; }
-/* line 340, main.scss */
+/* line 339, main.scss */
 section.consulta-faq span.icon-home.icon-consulta { background: url(../img/consulta-icon.png) no-repeat top left; }
-/* line 346, main.scss */
+/* line 345, main.scss */
 section.contato-navegacao { padding: 60px 0; background-image: url(../img/bg-contato.png); background-color: #f5f5f5; background-blend-mode: multiply; background-position: center bottom; background-repeat: no-repeat; }
-/* line 354, main.scss */
+/* line 353, main.scss */
 section.contato-navegacao h2 { font-weight: 700i; font-style: italic; color: #62c2f3; font-size: 24px; }
-/* line 360, main.scss */
+/* line 359, main.scss */
 section.contato-navegacao p { margin-bottom: 15px; color: #232327; }
-/* line 364, main.scss */
+/* line 363, main.scss */
 section.contato-navegacao p span.bold { font-weight: 700; font-style: italic; color: #000; }
-/* line 372, main.scss */
+/* line 371, main.scss */
 section.contato-navegacao ul { padding-left: 0; }
-/* line 374, main.scss */
+/* line 373, main.scss */
 section.contato-navegacao ul li { list-style-type: none; font-weight: 400; color: #232327; padding-top: 2px; }
-/* line 380, main.scss */
+/* line 379, main.scss */
 section.contato-navegacao ul li a { color: #232327; text-decoration: none; }
-/* line 384, main.scss */
+/* line 383, main.scss */
 section.contato-navegacao ul li a:hover { color: #62c2f3; }
+/* line 391, main.scss */
+section.heading { height: 230px; background-size: cover; /*margin-bottom: 1px;*/ margin-top: 1px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+/* line 402, main.scss */
+section.heading .overlay-hd { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); }
+/* line 407, main.scss */
+section.heading h2 { text-align: center; line-height: 230px; color: #fff; font-weight: 400; font-style: italic; font-size: 40px; -webkit-font-smoothing: antialiased; }
+/* line 417, main.scss */
+section.heading.hd-faq { background-image: url("../img/banner/banner-thiago-silva-01.jpg"); background-position: center center; }
+/* line 424, main.scss */
+section.faq { padding: 50px 0; }
 
-/* line 394, main.scss */
+/* line 429, main.scss */
 footer { background: #62c2f3; }
-/* line 396, main.scss */
+/* line 431, main.scss */
 footer p { color: #fff; font-size: 14px; text-align: center; padding: 15px 0; text-rendering: optimizeLegibility; }
 
-@media (min-width: 992px) and (max-width: 1024px) { /* line 408, main.scss */
+@media (min-width: 992px) and (max-width: 1024px) { /* line 443, main.scss */
   section.destaque { height: 420px; } }
-@media (min-width: 768px) and (max-width: 991px) { /* line 415, main.scss */
+@media (min-width: 768px) and (max-width: 991px) { /* line 450, main.scss */
   header .navbar-brand { padding: 16px 0 0; width: 260px; height: 46px; }
-  /* line 422, main.scss */
+  /* line 457, main.scss */
   header .nav > li > a { margin-top: 5px; }
-  /* line 427, main.scss */
+  /* line 462, main.scss */
   section.destaque { height: 340px; } }
-@media (max-width: 767px) { /* line 434, main.scss */
+@media (max-width: 767px) { /* line 469, main.scss */
   section.destaque { height: 300px; }
-  /* line 438, main.scss */
+  /* line 473, main.scss */
   section.consulta-faq p { padding-bottom: 30px; }
-  /* line 442, main.scss */
+  /* line 477, main.scss */
   section.contato-navegacao { padding: 30px 0; }
-  /* line 444, main.scss */
+  /* line 479, main.scss */
   section.contato-navegacao h2 { margin-top: 20px; }
-  /* line 448, main.scss */
+  /* line 483, main.scss */
   section.especialidades-home { padding-bottom: 40px; }
-  /* line 452, main.scss */
+  /* line 487, main.scss */
   section.especialidades-home .box-especialidade { min-height: 170px; padding: 15px 15px 60px; margin-bottom: 20px; }
-  /* line 459, main.scss */
+  /* line 494, main.scss */
   section.especialidades-home .box-especialidade h2 { max-width: 300px; min-height: 30px; }
-  /* line 465, main.scss */
+  /* line 500, main.scss */
   section.especialidades-home .box-especialidade a.btn-saiba-mais { bottom: 20px; } }
-@media (max-width: 480px) { /* line 477, main.scss */
+@media (max-width: 480px) { /* line 512, main.scss */
   header .navbar-brand { padding: 16px 0 0; width: 220px; height: 46px; }
-  /* line 484, main.scss */
+  /* line 519, main.scss */
   header .nav > li > a { margin-top: 5px; }
-  /* line 489, main.scss */
+  /* line 524, main.scss */
   section.destaque { height: 220px; } }
