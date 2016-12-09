@@ -5,7 +5,7 @@ $ts-cinza: #d3d9de;
 $ts-cinzaclaro: #f5f5f5;
 $ts-branco: #fff;
 $ts-branco10: rgba( 255, 255, 255, .15);
-$ts-chumbo: #232327;
+$ts-chumbo: #2c3e50;
 
 // FONTES
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
@@ -79,6 +79,15 @@ a:focus {
 	outline: none !important;
 }
 
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+	font-style: italic;
+}
+
+p {
+	font-size: 15px;
+	color: $ts-chumbo;
+}
 
 // HEADER
 header {
@@ -402,7 +411,7 @@ section {
 		.overlay-hd {
 			width: 100%;
 			height: 100%;
-			background: rgba(0, 0, 0, .4);
+			background: rgba(0, 0, 0, .3);
 		}
 		h2 {
 			text-align: center;
@@ -412,17 +421,137 @@ section {
     		font-style: italic;
     		font-size: 40px;
     		-webkit-font-smoothing: antialiased;
+    		
 		}
 		
 		&.hd-faq {
 			background-image: url("../img/banner/banner-thiago-silva-01.jpg");
-			background-position: center center;
-			
+			background-position-y: center;
+    		background-position-x: center;
 		}
+
+		&.hd-trat-endo{
+			background-image: url("../img/banner/banner-thiago-silva-02.png"); 
+			background-position-y: center;
+    		background-position-x: center;
+		}
+		&.hd-formacao{
+			background-image: url("../img/banner/banner-thiago-silva-03.png"); 
+			background-position-y: center;
+    		background-position-x: center;
+		}
+		&.hd-especialidade{
+			background-image: url("../img/banner/banner-thiago-silva-02.png"); 
+			background-position-y: center;
+    		background-position-x: center;
+		}
+		&.hd-especialidade2{
+			background-image: url("../img/banner/banner-thiago-silva-03.png"); 
+			background-position-y: center;
+    		background-position-x: center;
+		}
+		&.hd-contato{
+			background-image: url("../img/banner/banner-thiago-silva-01.jpg");
+			background-position-y: center;
+    		background-position-x: center;
+		}
+
 	}
 
 	&.faq {
 		padding: 50px 0;
+	}
+
+	&.especialidade {
+		padding: 30px 0;
+
+		h2 {
+			font-size: 28px;
+			padding-top: 15px;
+			padding-bottom: 30px;
+
+			&.margin-zero{
+				padding-bottom: 0;
+			}
+		}
+
+		p {
+			padding: 10px 0;
+		}
+		ul {
+			margin: 30px 0;
+			padding-left: 0;
+			li {
+				list-style-type: none;
+				color: $ts-chumbo;
+				-webkit-font-smoothing: antialiased;
+				padding: 3px 0;
+				background: url(../img/bullet.png)no-repeat 0 5px;
+				padding-left: 25px;
+			}
+		}
+	}
+
+	&.formacao {
+		padding: 30px 0;
+
+		h2 {
+			font-size: 28px;
+			padding-top: 15px;
+			padding-bottom: 30px;
+
+			&.margin-zero{
+				padding-bottom: 0;
+			}
+		}
+
+		h3 {
+			font-size: 22px;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			padding: 10px 0;
+		}
+		ul {
+			margin: 30px 0;
+			padding-left: 0;
+			li {
+				list-style-type: none;
+				color: $ts-chumbo;
+				-webkit-font-smoothing: antialiased;
+				padding: 3px 0;
+				background: url(../img/bullet.png)no-repeat 0 5px;
+				padding-left: 25px;
+			}
+		}
+	}
+
+	&.contato {
+		padding: 30px 0;
+		p {
+			padding: 10px 0;
+		}
+		form {
+			#form{ 
+			    background: #5e739a;
+			    border-radius: 20px;
+			    padding: 30px;
+			}
+			textarea.form-control{ height: 150px;}
+			.select{
+			    background: #7da9cd;
+			    color: #fff;
+			}
+			.btn-form-contato{
+				background: $ts-azulescuro;
+				font-weight: 300;
+				font-size: 14px;
+				color:$ts-branco;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
 	}
 }
 
