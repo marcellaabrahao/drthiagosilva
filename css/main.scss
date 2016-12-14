@@ -207,18 +207,6 @@ header {
 		background-color: $ts-azulescuro;
 	}
 
-
-
-	/*h1 {
-		margin-bottom: 15px;
-		margin-top: 15px;
-		
-		a {
-			img {
-				max-width: 375px !important;
-			}
-		}
-	}*/
 }
 
 section {
@@ -431,12 +419,12 @@ section {
 		}
 
 		&.hd-trat-endo{
-			background-image: url("../img/banner/banner-thiago-silva-02.png"); 
+			background-image: url("../img/banner/banner-thiago-silva-07.jpg"); 
 			background-position-y: center;
     		background-position-x: center;
 		}
 		&.hd-formacao{
-			background-image: url("../img/banner/banner-thiago-silva-03.png"); 
+			background-image: url("../img/banner/banner-thiago-silva-05.jpg"); 
 			background-position-y: center;
     		background-position-x: center;
 		}
@@ -450,8 +438,13 @@ section {
 			background-position-y: center;
     		background-position-x: center;
 		}
+		&.hd-especialidade3{
+			background-image: url("../img/banner/banner-thiago-silva-06.jpg"); 
+			background-position-y: center;
+    		background-position-x: center;
+		}
 		&.hd-contato{
-			background-image: url("../img/banner/banner-thiago-silva-01.jpg");
+			background-image: url("../img/banner/banner-thiago-silva-04.jpg");
 			background-position-y: center;
     		background-position-x: center;
 		}
