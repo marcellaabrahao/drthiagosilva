@@ -89,6 +89,19 @@ p {
 	color: $ts-chumbo;
 }
 
+.modal-header {
+	border-top: 5px $ts-azulclaro solid;
+	border-bottom: none;
+	background: none;
+	h4 {
+		color: $ts-azulescuro;
+	}
+}
+.modal-content {
+	background: $ts-branco url(../img/meio-cerebro.png)no-repeat top left;
+	border: none;
+}
+
 // HEADER
 header {
 	background: $ts-azulclaro;
@@ -356,6 +369,20 @@ section {
 		p {
 			margin-bottom: 15px;
 			color:$ts-chumbo;
+			a {
+				&.mapa-modal{
+					color: $ts-azulclaro;
+					background: url(../img/pin.png)no-repeat left top;
+					padding-left: 25px;
+					padding-bottom: 3px;
+    				margin-left: 5px;
+    				&:hover {
+    					text-decoration:none;
+    					cursor: pointer;
+    				}
+				}
+
+			}
 			span{
 				&.bold {
 					font-weight: 700;
@@ -467,7 +494,15 @@ section {
 				padding-bottom: 0;
 			}
 		}
-
+		img {
+			/*float: right;*/
+			@include border-radius(5px);
+			border: 3px solid $ts-cinzaclaro;
+			/*margin: 0 15px 15px;
+			width: 100%;
+			height: auto;
+			max-width: 500px;*/
+		}
 		p {
 			padding: 10px 0;
 		}
