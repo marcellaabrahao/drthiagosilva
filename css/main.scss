@@ -102,6 +102,29 @@ p {
 	border: none;
 }
 
+
+.alert-danger {
+	background-color: #ffecea;
+    border-color: #e74c3c;
+    color: #e74c3c;
+    .close:hover {
+		opacity: 1;
+		color:#e74c3c;
+	}
+
+}
+
+.alert-success {
+    background-color: #d4f7f0;
+    border-color: #18bc9c;
+    color: #18bc9c;
+    .close:hover {
+		opacity: 1;
+		color:#18bc9c;
+	}
+}
+
+
 // HEADER
 header {
 	background: $ts-azulclaro;
@@ -219,7 +242,6 @@ header {
 	.navbar-default .navbar-toggle:hover {
 		background-color: $ts-azulescuro;
 	}
-
 }
 
 section {
@@ -593,7 +615,6 @@ footer {
 		text-rendering: optimizeLegibility;
 	}
 }
-
 
 @media (min-width: 992px) and (max-width: 1024px) {
 	section {

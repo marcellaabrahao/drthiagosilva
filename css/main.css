@@ -25,6 +25,12 @@ p { font-size: 15px; color: #2c3e50; }
 
 .modal-content { background: #fff url(../img/meio-cerebro.png) no-repeat top left; border: none; }
 
+.alert-danger { background-color: #ffecea; border-color: #e74c3c; color: #e74c3c; }
+.alert-danger .close:hover { opacity: 1; color: #e74c3c; }
+
+.alert-success { background-color: #d4f7f0; border-color: #18bc9c; color: #18bc9c; }
+.alert-success .close:hover { opacity: 1; color: #18bc9c; }
+
 header { background: #62c2f3; border-bottom: 7px solid #d3d9de; }
 header section.hd-topo { background: rgba(255, 255, 255, 0.15); }
 header section.hd-topo p { text-align: right; font-size: 13px; color: #fff; line-height: 29px; display: inline-block; float: right; padding-right: 5px; }
